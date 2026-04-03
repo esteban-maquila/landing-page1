@@ -1,0 +1,739 @@
+/* ==============================================
+   CSS Custom Properties (Variables)
+============================================== */
+:root {
+    /* Color Palette Extracted from Image */
+    --color-primary: #323e4e;
+    /* Slate Navy */
+    --color-primary-light: #5e646f;
+    /* Slate Gray */
+    --color-secondary: #6e913d;
+    /* Olive Green Accent */
+    --color-whatsapp: #25D366;
+    /* WhatsApp Green */
+    --color-whatsapp-hover: #1EBE5D;
+
+    --color-bg-light: #ffffff;
+    --color-bg-alt: #f3f5ed;
+    /* Light Sage Background */
+    --color-text-main: #323e4e;
+    --color-text-muted: #5e646f;
+    --color-border: #e0e5cf;
+
+    /* Typography */
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Spacings */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+
+    /* Shadows & Effects */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-floating: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    --radius-sm: 0.375rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1.5rem;
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+/* ==============================================
+   Reset & Base Styles
+============================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text-main);
+    background-color: var(--color-bg-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ==============================================
+   Typography
+============================================== */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-primary);
+}
+
+.section-title {
+    font-size: 2.25rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+/* ==============================================
+   Buttons
+============================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp {
+    background-color: var(--color-whatsapp);
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--color-whatsapp-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline-whatsapp {
+    background-color: transparent;
+    color: var(--color-whatsapp);
+    border: 2px solid var(--color-whatsapp);
+}
+
+.btn-outline-whatsapp:hover {
+    background-color: var(--color-whatsapp);
+    color: white;
+}
+
+.btn-whatsapp-large {
+    background-color: var(--color-whatsapp);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+.btn-whatsapp-large:hover {
+    background-color: var(--color-whatsapp-hover);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.wa-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ==============================================
+   Header
+============================================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-border);
+    transition: box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+    box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo-siigo {
+    color: #0051ff;
+    /* Azul Corporativo Siigo */
+}
+
+.logo-aspel {
+    color: var(--color-secondary);
+    opacity: 0.9;
+}
+
+.nav-links {
+    display: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: var(--color-text-main);
+    transition: color var(--transition-fast);
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+}
+
+/* ==============================================
+   Hero Section
+============================================== */
+.hero {
+    padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl);
+    background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg-light) 100%);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(37, 211, 102, 0.1);
+    color: #1a9c4b;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-headline {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: -1px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+    max-width: 500px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    z-index: 1;
+}
+
+.hero-image {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-floating);
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: float 6s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-card .icon {
+    font-size: 2rem;
+}
+
+.floating-card .text strong {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-whatsapp);
+}
+
+.floating-card .text span {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+/* ==============================================
+   Propuesta de Valor (Benefits)
+============================================== */
+.value-prop {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-bg-light);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.benefit-card {
+    padding: 2rem;
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.benefit-card p {
+    color: var(--color-text-muted);
+}
+
+/* ==============================================
+   Soluciones (Acordeón)
+============================================== */
+.solutions {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-bg-alt);
+}
+
+.accordion-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion-item {
+    background: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: box-shadow var(--transition-fast);
+}
+
+.accordion-item:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.accordion-item.active {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.accordion-header:hover {
+    background-color: var(--color-bg-alt);
+}
+
+.accordion-item.active .accordion-header {
+    color: var(--color-primary);
+    background-color: var(--color-bg-light);
+}
+
+.acc-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.acc-title .icon {
+    font-size: 1.75rem;
+}
+
+.acc-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-text-muted);
+    transition: transform var(--transition-normal);
+}
+
+.accordion-item.active .acc-icon {
+    transform: rotate(45deg);
+    color: var(--color-primary);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.accordion-inner {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.accordion-item.active .accordion-inner {
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.5rem;
+    margin-top: -1px;
+}
+
+.solution-features {
+    list-style: none;
+}
+
+.solution-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-main);
+}
+
+.solution-features li:last-child {
+    margin-bottom: 0;
+}
+
+.solution-features li span {
+    color: var(--color-whatsapp);
+    font-weight: bold;
+}
+
+/* ==============================================
+   Testimonios
+============================================== */
+.testimonials {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-bg-light);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.testimonial-card {
+    padding: 2.5rem;
+    background: #f8fafc;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    position: relative;
+}
+
+.stars {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.quote {
+    font-size: 1.125rem;
+    font-style: italic;
+    color: var(--color-text-main);
+    margin-bottom: 1.5rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.author-info strong {
+    display: block;
+    color: var(--color-primary);
+}
+
+.author-info span {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+/* ==============================================
+   CTA Final
+============================================== */
+.cta-final {
+    position: relative;
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #001f60 100%);
+    color: white;
+}
+
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content h2 {
+    color: white;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* ==============================================
+   Footer
+============================================== */
+.footer {
+    background-color: var(--color-primary);
+    color: #94a3b8;
+    padding-top: var(--spacing-xl);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+.footer-brand p {
+    margin-top: 1rem;
+    max-width: 300px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 0.75rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary-light);
+}
+
+.footer-contact p {
+    margin-bottom: 0.75rem;
+}
+
+.footer-bottom {
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.875rem;
+}
+
+/* ==============================================
+   Floating WhatsApp Button
+============================================== */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-whatsapp);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.floating-whatsapp svg {
+    width: 35px;
+    height: 35px;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    background-color: var(--color-whatsapp-hover);
+    box-shadow: 0 15px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* ==============================================
+   Animations (Intersection Observer Classes)
+============================================== */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+    transform: translateY(0);
+}
+
+.slide-up {
+    transform: translateY(40px);
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
