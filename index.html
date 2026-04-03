@@ -1,253 +1,445 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Soluciones Siigo Aspel para supermercados y tiendas de abarrotes en México. Control de inventarios, nómina, facturación CFDI 4.0 y administración.">
-    <meta property="og:title" content="Siigo Aspel - Software para Supermercados en México">
-    <meta property="og:description"
-        content="Toma el control de tu supermercado con inventario automatizado, facturación rápida y gestión de nómina eficiente.">
+    <meta name="description" content="Siigo Aspel — Software empresarial para negocios en México. Facturación CFDI 4.0, inventarios, nómina y contabilidad en un solo lugar.">
+    <meta property="og:title" content="Siigo Aspel | Control Total de tu Negocio">
+    <meta property="og:description" content="Automatiza tu facturación, inventario y nómina. El software empresarial que hace crecer tu negocio en México.">
     <meta property="og:type" content="website">
-    <title>Siigo Aspel | Soluciones Automatizadas</title>
+    <title>Siigo Aspel | Control Total de tu Negocio</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container header-container">
             <div class="logo">
-                <span class="logo-siigo">Siigo</span> <span class="logo-aspel">Aspel</span>
+                <span class="logo-s">Siigo</span><span class="logo-dot">·</span><span class="logo-a">Aspel</span>
             </div>
             <nav class="nav-links">
                 <a href="#beneficios">Beneficios</a>
                 <a href="#soluciones">Soluciones</a>
+                <a href="#asesora">Asesora</a>
                 <a href="#testimonios">Testimonios</a>
             </nav>
             <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20para%20mi%20negocio%20%F0%9F%9B%92"
-                class="btn btn-primary whatsapp-link" target="_blank" rel="noopener noreferrer">
-                Contactar Asesor
+                class="btn btn-nav" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Hablar Ahora
             </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
+        <div class="hero-bg">
+            <div class="mesh-1"></div>
+            <div class="mesh-2"></div>
+            <div class="mesh-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
         <div class="container hero-container">
-            <div class="hero-content animate-on-scroll slide-up">
-                <div class="badge">Especial para Negocios en México 🇲🇽</div>
-                <h1 class="hero-headline">El control total de tu negocio, en un solo lugar.</h1>
-                <p class="hero-subtitle">Simplifica tu inventario, asegura tu facturación CFDI 4.0 y gestiona la nómina
-                    sin complicaciones. Todo respaldado por Siigo Aspel.</p>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Software #1 para Negocios en México 🇲🇽
+                </div>
+                <h1 class="hero-headline">
+                    Controla tu negocio<br>
+                    <span class="text-accent">sin complicaciones.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Facturación CFDI 4.0, inventario en tiempo real y nómina automatizada.
+                    Todo en un solo sistema, respaldado por Siigo Aspel.
+                </p>
                 <div class="hero-actions">
                     <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20para%20mi%20negocio%20%F0%9F%9B%92"
-                        class="btn btn-whatsapp whatsapp-link" target="_blank" rel="noopener noreferrer">
-                        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg>
-                        Solicitar Demostración
+                        class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Solicitar Demo Gratis
                     </a>
+                    <a href="#soluciones" class="btn btn-ghost">Ver Soluciones →</a>
+                </div>
+
+                <div class="trust-badges">
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        CFDI 4.0 Certificado
+                    </div>
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        100% en la Nube
+                    </div>
+                    <div class="trust-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Soporte Especializado
+                    </div>
                 </div>
             </div>
-            <div class="hero-image-wrapper animate-on-scroll fade-in">
-                <!-- Using one of the provided real images for the hero -->
-                <img src="./WhatsApp%20Image%202026-04-01%20at%209.36.47%20PM.jpeg"
-                    alt="Dashboard de Siigo Aspel en supermercado" class="hero-image">
+
+            <div class="hero-visual">
+                <div class="hero-img-wrap">
+                    <img src="./WhatsApp%20Image%202026-04-01%20at%209.36.47%20PM.jpeg" alt="Daniela Montoya - Consultora Siigo Aspel" class="hero-img">
+                    <div class="img-glow"></div>
+                </div>
+                <div class="stat-card stat-card-1">
+                    <span class="stat-num" data-target="500">0</span><span class="stat-num-suffix">+</span>
+                    <span class="stat-label">Empresas Activas</span>
+                </div>
+                <div class="stat-card stat-card-2">
+                    <span class="stat-icon">✓</span>
+                    <span class="stat-label">SAT Actualizado</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <div class="scroll-line"></div>
+            <span>Descubre más</span>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stat-block reveal">
+                <div class="stat-number"><span class="counter" data-target="500">0</span>+</div>
+                <div class="stat-desc">Empresas que confían en nosotros</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-block reveal" style="--delay: 0.1s">
+                <div class="stat-number">20+</div>
+                <div class="stat-desc">Años de experiencia en el mercado</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-block reveal" style="--delay: 0.2s">
+                <div class="stat-number">100%</div>
+                <div class="stat-desc">Cumplimiento fiscal garantizado</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-block reveal" style="--delay: 0.3s">
+                <div class="stat-number"><span class="counter" data-target="48">0</span>h</div>
+                <div class="stat-desc">Implementación rápida y sin dolor</div>
             </div>
         </div>
     </section>
 
-    <!-- Propuesta de Valor -->
-    <section id="beneficios" class="value-prop">
-        <div class="container text-center animate-on-scroll slide-up">
-            <h2 class="section-title">¿Por qué elegir Siigo Aspel para tu negocio?</h2>
-            <p class="section-subtitle">Diseñado para resolver los retos diarios de los negocios en México.</p>
-        </div>
-        <div class="container benefits-grid">
-            <div class="benefit-card animate-on-scroll slide-up" style="transition-delay: 0.1s;">
-                <div class="benefit-icon">⏱️</div>
-                <h3>Ahorro de Tiempo</h3>
-                <p>Automatiza procesos tediosos como el corte de caja, cálculo de impuestos y reportes diarios,
-                    liberando tiempo para que te enfoques en vender más.</p>
+    <!-- Benefits -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">¿Por qué Siigo Aspel?</div>
+                <h2 class="section-title">Diseñado para <span class="text-accent">ganar tiempo</span><br>y perder dolores de cabeza.</h2>
             </div>
-            <div class="benefit-card animate-on-scroll slide-up" style="transition-delay: 0.2s;">
-                <div class="benefit-icon">🛡️</div>
-                <h3>Cumplimiento SAT Garantizado</h3>
-                <p>Olvídate de las multas. Nuestra plataforma está 100% actualizada con las últimas disposiciones
-                    fiscales, incluyendo CFDI 4.0 y Carta Porte.</p>
-            </div>
-            <div class="benefit-card animate-on-scroll slide-up" style="transition-delay: 0.3s;">
-                <div class="benefit-icon">📱</div>
-                <h3>Control en Tiempo Real</h3>
-                <p>Accede a la información estratégica de tu negocio desde cualquier lugar con un sistema 100% en la
-                    Nube. Toma decisiones basadas en
-                    datos reales, no en suposiciones.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card reveal" style="--delay: 0s">
+                    <div class="benefit-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Ahorra Horas Cada Día</h3>
+                    <p>Automatiza cortes de caja, cálculo de impuestos y reportes. Tu tiempo vale para vender, no para papeleos.</p>
+                    <div class="benefit-arrow">→</div>
+                </div>
+                <div class="benefit-card reveal" style="--delay: 0.1s">
+                    <div class="benefit-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Cero Multas del SAT</h3>
+                    <p>Plataforma 100% actualizada con CFDI 4.0 y Carta Porte. Factura sin miedo y con certeza legal total.</p>
+                    <div class="benefit-arrow">→</div>
+                </div>
+                <div class="benefit-card reveal" style="--delay: 0.2s">
+                    <div class="benefit-icon-wrap">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Control desde Cualquier Lugar</h3>
+                    <p>Accede a ventas, inventario y reportes en tiempo real desde tu celular. Decisiones con datos, no corazonadas.</p>
+                    <div class="benefit-arrow">→</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Soluciones Modulares (Acordeón) -->
+    <!-- Solutions -->
     <section id="soluciones" class="solutions">
-        <div class="container text-center animate-on-scroll slide-up">
-            <h2 class="section-title">Nuestras Soluciones Siigo Aspel</h2>
-            <p class="section-subtitle">Haz clic en cada módulo para conocer sus beneficios y cómo impulsa tu
-                negocio.</p>
-        </div>
-        <div class="container accordion-container animate-on-scroll slide-up">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <div class="section-tag">Módulos</div>
+                <h2 class="section-title">Todo lo que tu negocio<br><span class="text-accent">necesita en un solo sistema.</span></h2>
+            </div>
 
-            <!-- Administración -->
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    <span class="acc-title"><span class="icon">📊</span> Administración</span>
-                    <span class="acc-icon">+</span>
-                </button>
-                <div class="accordion-content">
-                    <div class="accordion-inner">
-                        <ul class="solution-features">
-                            <li><span>✔</span> Control de cuentas por cobrar y por pagar.</li>
-                            <li><span>✔</span> Seguimiento detallado del flujo de efectivo y bancos.</li>
-                            <li><span>✔</span> Reportes administrativos estratégicos para toma de decisiones.</li>
-                            <li><span>✔</span> Multimoneda y control de múltiples sucursales centralizado.</li>
-                        </ul>
+            <div class="solutions-tabs reveal">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="admin">📊 Administración</button>
+                    <button class="tab-btn" data-tab="fact">🧾 Facturación</button>
+                    <button class="tab-btn" data-tab="cont">📈 Contabilidad</button>
+                    <button class="tab-btn" data-tab="nom">👥 Nómina y RH</button>
+                    <button class="tab-btn" data-tab="pdv">🏷️ Punto de Venta</button>
+                    <button class="tab-btn" data-tab="fisc">🏛️ Siigo Fiscal</button>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="tab-admin">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Administración Centralizada</h3>
+                                <p>Toma el control total de las finanzas de tu negocio con visibilidad en tiempo real.</p>
+                                <ul class="feat-list">
+                                    <li>Control de cuentas por cobrar y por pagar</li>
+                                    <li>Flujo de efectivo y bancos detallado</li>
+                                    <li>Reportes estratégicos para toma de decisiones</li>
+                                    <li>Multimoneda y múltiples sucursales</li>
+                                </ul>
+                            </div>
+                            <div class="tab-graphic">
+                                <div class="mock-dashboard">
+                                    <div class="mock-bar"><div class="mock-bar-fill" style="width:85%"></div></div>
+                                    <div class="mock-bar"><div class="mock-bar-fill" style="width:62%"></div></div>
+                                    <div class="mock-bar"><div class="mock-bar-fill" style="width:91%"></div></div>
+                                    <div class="mock-bar"><div class="mock-bar-fill" style="width:44%"></div></div>
+                                    <div class="mock-stat-row">
+                                        <div class="mock-stat"><span>$1.2M</span><small>Cobrado</small></div>
+                                        <div class="mock-stat"><span>$340K</span><small>Por cobrar</small></div>
+                                        <div class="mock-stat up"><span>+18%</span><small>vs mes ant.</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-fact">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Facturación CFDI 4.0</h3>
+                                <p>Emite facturas electrónicas en segundos, sin errores y siempre al día con el SAT.</p>
+                                <ul class="feat-list">
+                                    <li>Emisión de CFDI 4.0 sin errores</li>
+                                    <li>Facturación global y complementos de pago</li>
+                                    <li>Envío automático de comprobantes</li>
+                                    <li>Catálogo SAT integrado y actualizado</li>
+                                </ul>
+                            </div>
+                            <div class="tab-graphic">
+                                <div class="mock-invoice">
+                                    <div class="inv-header">
+                                        <span class="inv-tag cfdi">CFDI 4.0 ✓</span>
+                                        <span class="inv-folio">Folio #A-00847</span>
+                                    </div>
+                                    <div class="inv-line"></div>
+                                    <div class="inv-row"><span>Subtotal</span><span>$12,500.00</span></div>
+                                    <div class="inv-row"><span>IVA 16%</span><span>$2,000.00</span></div>
+                                    <div class="inv-row total"><span>Total</span><span>$14,500.00</span></div>
+                                    <div class="inv-stamp">Timbrado SAT ✓</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-cont">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Contabilidad Electrónica</h3>
+                                <p>Genera estados financieros automáticos y cumple con la contabilidad electrónica ante el SAT.</p>
+                                <ul class="feat-list">
+                                    <li>Pólizas automáticas por operación</li>
+                                    <li>Descarga masiva de XML y conciliación</li>
+                                    <li>Balance General y Estado de Resultados</li>
+                                    <li>Contabilidad Electrónica garantizada</li>
+                                </ul>
+                            </div>
+                            <div class="tab-graphic">
+                                <div class="mock-dashboard">
+                                    <div class="mock-chart-label">Balance General</div>
+                                    <div class="mock-donut-wrap">
+                                        <div class="mock-donut"></div>
+                                        <div class="mock-legend">
+                                            <span class="leg-item"><em style="background:#00e676"></em>Activo 68%</span>
+                                            <span class="leg-item"><em style="background:#0051ff"></em>Pasivo 21%</span>
+                                            <span class="leg-item"><em style="background:#7b8fab"></em>Capital 11%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-nom">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Nómina y Recursos Humanos</h3>
+                                <p>Paga a tu equipo sin errores, cumple con el IMSS y timbra recibos en segundos.</p>
+                                <ul class="feat-list">
+                                    <li>Cálculo exacto de sueldos, ISR e IMSS/SUA</li>
+                                    <li>Timbrado ilimitado de CFDI 4.0 nómina</li>
+                                    <li>Gestión de incidencias, vacaciones y horas extra</li>
+                                    <li>Expediente digital por empleado</li>
+                                </ul>
+                            </div>
+                            <div class="tab-graphic">
+                                <div class="mock-payroll">
+                                    <div class="payroll-row header-row"><span>Empleado</span><span>Neto</span><span>Estado</span></div>
+                                    <div class="payroll-row"><span>J. García</span><span>$8,400</span><span class="pay-ok">✓</span></div>
+                                    <div class="payroll-row"><span>M. López</span><span>$12,200</span><span class="pay-ok">✓</span></div>
+                                    <div class="payroll-row"><span>A. Torres</span><span>$6,800</span><span class="pay-ok">✓</span></div>
+                                    <div class="payroll-total">Total nómina: <strong>$27,400</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-pdv">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Punto de Venta Ágil</h3>
+                                <p>Agiliza tus ventas en mostrador, controla tu caja y actualiza tu inventario en automático.</p>
+                                <ul class="feat-list">
+                                    <li>Ventas rápidas con escáner de código de barras</li>
+                                    <li>Control de caja, cortes y arqueos</li>
+                                    <li>Descuento automático de inventario</li>
+                                    <li>Impresión de tickets y cajón de dinero</li>
+                                </ul>
+                            </div>
+                            <div class="tab-graphic">
+                                <div class="mock-pos">
+                                    <div class="pos-screen">
+                                        <div class="pos-item"><span>Leche 1L x2</span><span>$54</span></div>
+                                        <div class="pos-item"><span>Pan integral x1</span><span>$38</span></div>
+                                        <div class="pos-item"><span>Jugo naranja x1</span><span>$25</span></div>
+                                    </div>
+                                    <div class="pos-total">Total: <strong>$117.00</strong></div>
+                                    <div class="pos-btn">COBRAR →</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-fisc">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Siigo Fiscal — Blindaje SAT</h3>
+                                <p>Audita tus comprobantes antes que el SAT. Detecta riesgos y actúa antes de que sean multas.</p>
+                                <ul class="feat-list">
+                                    <li>Auditoría preventiva de XML</li>
+                                    <li>Validación contra listas negras SAT (EFOS/EDOS)</li>
+                                    <li>Recuperación de facturas emitidas y recibidas</li>
+                                    <li>Declaraciones informativas simplificadas</li>
+                                </ul>
+                            </div>
+                            <div class="tab-graphic">
+                                <div class="mock-audit">
+                                    <div class="audit-row ok"><span class="audit-icon">✓</span><span>CFDI válidos: 1,248</span></div>
+                                    <div class="audit-row warn"><span class="audit-icon">⚠</span><span>Con alertas: 3</span></div>
+                                    <div class="audit-row bad"><span class="audit-icon">✕</span><span>EFOS detectados: 0</span></div>
+                                    <div class="audit-score">Salud fiscal: <strong>98%</strong></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Facturación -->
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    <span class="acc-title"><span class="icon">🧾</span> Facturación</span>
-                    <span class="acc-icon">+</span>
-                </button>
-                <div class="accordion-content">
-                    <div class="accordion-inner">
-                        <ul class="solution-features">
-                            <li><span>✔</span> Emisión de facturas electrónicas CFDI 4.0 sin errores.</li>
-                            <li><span>✔</span> Facturación global simplificada y complementos de pago.</li>
-                            <li><span>✔</span> Envío automático de comprobantes a clientes.</li>
-                            <li><span>✔</span> Catálogo de productos y servicios alineado a claves del SAT.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contabilidad -->
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    <span class="acc-title"><span class="icon">📈</span> Contabilidad</span>
-                    <span class="acc-icon">+</span>
-                </button>
-                <div class="accordion-content">
-                    <div class="accordion-inner">
-                        <ul class="solution-features">
-                            <li><span>✔</span> Generación de pólizas automáticas a partir de operaciones.</li>
-                            <li><span>✔</span> Descarga masiva de XML y herramientas de conciliación bancaria.</li>
-                            <li><span>✔</span> Generación de estados financieros (Balance General, Estado de
-                                Resultados).</li>
-                            <li><span>✔</span> Cumplimiento garantizado de Contabilidad Electrónica ante el SAT.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nómina y RH -->
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    <span class="acc-title"><span class="icon">👥</span> Nómina y RH</span>
-                    <span class="acc-icon">+</span>
-                </button>
-                <div class="accordion-content">
-                    <div class="accordion-inner">
-                        <ul class="solution-features">
-                            <li><span>✔</span> Cálculo exacto de sueldos, retenciones ISR e IMSS/SUA.</li>
-                            <li><span>✔</span> Timbrado ilimitado de recibos de nómina CFDI 4.0.</li>
-                            <li><span>✔</span> Gestión eficiente de incidencias, vacaciones, faltas y horas extras.</li>
-                            <li><span>✔</span> Mantenimiento del expediente digital por empleado.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Punto de Venta -->
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    <span class="acc-title"><span class="icon">🏷️</span> Punto de Venta</span>
-                    <span class="acc-icon">+</span>
-                </button>
-                <div class="accordion-content">
-                    <div class="accordion-inner">
-                        <ul class="solution-features">
-                            <li><span>✔</span> Transacciones rápidas en mostrador con escáner de código de barras.</li>
-                            <li><span>✔</span> Control total de caja, cortes ciegos y arqueos impecables.</li>
-                            <li><span>✔</span> Descuento directo de inventarios en tiempo real al registrar ventas.</li>
-                            <li><span>✔</span> Impresión ágil de tickets de venta y conexión a cajón de dinero.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Siigo Fiscal -->
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    <span class="acc-title"><span class="icon">🏛️</span> Siigo Fiscal</span>
-                    <span class="acc-icon">+</span>
-                </button>
-                <div class="accordion-content">
-                    <div class="accordion-inner">
-                        <ul class="solution-features">
-                            <li><span>✔</span> Auditoría preventiva de comprobantes (XML) para evitar riesgos.</li>
-                            <li><span>✔</span> Validaciones automáticas contra las listas negras del SAT (EFOS/EDOS).
-                            </li>
-                            <li><span>✔</span> Recuperación inteligente de facturas emitidas y recibidas.</li>
-                            <li><span>✔</span> Declaraciones informativas simplificadas.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- Testimonios -->
-    <section id="testimonios" class="testimonials">
-        <div class="container text-center animate-on-scroll slide-up">
-            <h2 class="section-title">Resultados reales en el sector</h2>
-            <p class="section-subtitle">Únete a cientos de empresarios que ya transformaron su operación.</p>
+    <!-- Asesora Section -->
+    <section id="asesora" class="advisor-section">
+        <div class="advisor-bg">
+            <div class="adv-mesh-1"></div>
+            <div class="adv-mesh-2"></div>
         </div>
-        <div class="container testimonials-grid">
-            <div class="testimonial-card animate-on-scroll slide-up">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="quote">"Antes pasábamos horas descifrando descuadres de inventario. Con Siigo Aspel, tenemos
-                    certeza total de lo que hay en bodega y piso de ventas."</p>
-                <div class="author">
-                    <div class="author-avatar">M</div>
-                    <div class="author-info">
-                        <strong>Roberto Mendoza</strong>
-                        <span>Gerente, Supermercados El Fresno</span>
+        <div class="container advisor-container">
+            <div class="advisor-content reveal">
+                <div class="section-tag light">Tu Asesora Personal</div>
+                <h2 class="advisor-headline">
+                    No solo un software.<br>
+                    <span class="text-accent">Un equipo de expertos a tu lado.</span>
+                </h2>
+                <p class="advisor-text">
+                    Expertos que te guiarán paso a paso desde la implementación hasta que tu equipo domine el sistema. Capacitación incluida, sin costos ocultos.
+                </p>
+                <ul class="advisor-perks">
+                    <li>
+                        <div class="perk-icon">🚀</div>
+                        <div><strong>Implementación en 48h</strong><br><small>Configura y echa a andar tu sistema desde el primer día</small></div>
+                    </li>
+                    <li>
+                        <div class="perk-icon">🎓</div>
+                        <div><strong>Capacitación para tu equipo</strong><br><small>Tu personal aprende a dominar cada módulo contigo</small></div>
+                    </li>
+                    <li>
+                        <div class="perk-icon">💬</div>
+                        <div><strong>Soporte directo por WhatsApp</strong><br><small>Respuesta rápida cuando más lo necesitas</small></div>
+                    </li>
+                </ul>
+                <a href="https://wa.me/525599093539?text=Hola%20Daniela,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20para%20mi%20negocio%20%F0%9F%9B%92"
+                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Hablar con Asesor
+                </a>
+            </div>
+            <div class="advisor-image reveal" style="--delay: 0.2s">
+                <div class="advisor-img-wrap">
+                    <img src="./WhatsApp%20Image%202026-04-01%20at%209.36.47%20PM.jpeg" alt="Daniela Montoya - Consultora Siigo Aspel">
+                    <div class="advisor-badge">
+                        <div class="adv-badge-dot"></div>
+                        Disponible ahora
+                    </div>
+                    <div class="advisor-quote">
+                        "No es solo un sistema,<br>es el <strong>control total</strong> de tu negocio."
                     </div>
                 </div>
             </div>
-            <div class="testimonial-card animate-on-scroll slide-up" style="transition-delay: 0.1s;">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="quote">"La transición al CFDI 4.0 nos asustaba, pero su sistema nos guio paso a paso. La
-                    facturación más rápida que hemos tenido jamás."</p>
-                <div class="author">
-                    <div class="author-avatar">C</div>
-                    <div class="author-info">
-                        <strong>Carmen Ruiz</strong>
-                        <span>Administración, Abarrotes La Principal</span>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <div class="section-tag">Testimonios</div>
+                <h2 class="section-title">Empresarios que ya<br><span class="text-accent">transformaron su operación.</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testi-card reveal">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-quote-mark">"</div>
+                    <p class="testi-text">Antes pasábamos horas descifrando descuadres de inventario. Con Siigo Aspel, tenemos certeza total de lo que hay en bodega y piso de ventas.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">RM</div>
+                        <div>
+                            <strong>Roberto Mendoza</strong>
+                            <span>Gerente · Supermercados El Fresno</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal" style="--delay: 0.15s">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-quote-mark">"</div>
+                    <p class="testi-text">La transición al CFDI 4.0 nos asustaba, pero el sistema nos guio paso a paso. La facturación más rápida que hemos tenido jamás.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">CR</div>
+                        <div>
+                            <strong>Carmen Ruiz</strong>
+                            <span>Administración · Abarrotes La Principal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal" style="--delay: 0.3s">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-quote-mark">"</div>
+                    <p class="testi-text">Desde que implementamos Aspel COI / Siigo Fiscal, la gestión contable mejoró por completo. Logramos automatizar procesos y reducir errores en pocos días; ahora contamos con información financiera siempre actualizada y un equipo totalmente adaptado al sistema.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">LV</div>
+                        <div>
+                            <strong>Luis Vargas</strong>
+                            <span>Director · Mini Super La Familia</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -255,14 +447,19 @@
     </section>
 
     <!-- CTA Final -->
-    <section class="cta-final animate-on-scroll fade-in">
-        <div class="cta-overlay"></div>
-        <div class="container cta-content">
-            <h2>Da el siguiente paso hacia el crecimiento de tu negocio</h2>
-            <p>Implementación rápida, soporte especializado y capacitación incluida.</p>
-            <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20para%20mi%20negocio%20%F0%9F%9B%92"
-                class="btn btn-whatsapp-large whatsapp-link" target="_blank" rel="noopener noreferrer">
-                Hablar con un Especialista
+    <section class="cta-final">
+        <div class="cta-bg">
+            <div class="cta-mesh-1"></div>
+            <div class="cta-mesh-2"></div>
+        </div>
+        <div class="container cta-content reveal">
+            <div class="cta-tag">¿Listo para empezar?</div>
+            <h2 class="cta-headline">Agenda tu demo gratis<br><span class="text-accent">y empieza hoy mismo.</span></h2>
+            <p class="cta-sub">Implementación rápida · Capacitación incluida · Soporte especializado</p>
+            <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20agendar%20una%20demo%20de%20Siigo%20Aspel%20%F0%9F%9B%92"
+                class="btn btn-cta" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Quiero mi Demo Gratis
             </a>
         </div>
     </section>
@@ -272,46 +469,53 @@
         <div class="container footer-container">
             <div class="footer-brand">
                 <div class="logo">
-                    <span class="logo-siigo" style="color: white;">Siigo</span> <span class="logo-aspel"
-                        style="color: var(--color-secondary);">Aspel</span>
+                    <span class="logo-s">Siigo</span><span class="logo-dot">·</span><span class="logo-a">Aspel</span>
                 </div>
                 <p>Potenciando el crecimiento empresarial en México con tecnología de vanguardia.</p>
+                <a href="https://wa.me/525599093539" class="footer-wa" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    wa.me/525599093539
+                </a>
             </div>
-            <div class="footer-links">
+            <div class="footer-col">
+                <h4>Soluciones</h4>
+                <a href="#soluciones">Administración</a>
+                <a href="#soluciones">Facturación CFDI 4.0</a>
+                <a href="#soluciones">Contabilidad</a>
+                <a href="#soluciones">Nómina y RH</a>
+                <a href="#soluciones">Punto de Venta</a>
+            </div>
+            <div class="footer-col">
                 <h4>Empresa</h4>
-                <a href="#">Sobre Nosotros</a>
-                <a href="#">Soluciones</a>
-                <a href="#">Casos de Éxito</a>
-            </div>
-            <div class="footer-links">
-                <h4>Legal</h4>
+                <a href="#asesora">Nuestra Asesora</a>
+                <a href="#testimonios">Casos de Éxito</a>
                 <a href="#">Términos y Condiciones</a>
                 <a href="#">Aviso de Privacidad</a>
             </div>
-            <div class="footer-contact">
+            <div class="footer-col">
                 <h4>Contacto</h4>
                 <p>📍 Ciudad de México, México</p>
-                <p>📞 Atención Comercial vía WhatsApp</p>
+                <p>📲 Atención vía WhatsApp</p>
+                <p>⏰ Lun–Vie 9:00–18:00</p>
             </div>
         </div>
-        <div class="footer-bottom text-center">
-            <p>&copy; 2026 Siigo Aspel. Todos los derechos reservados. Las marcas y logotipos de Siigo y Aspel son
-                propiedad registrada.</p>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>© 2026 Siigo Aspel · Todos los derechos reservados.</p>
+                <p class="footer-disclaimer">Las marcas Siigo y Aspel son propiedad registrada de sus respectivos titulares.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Fixed Floating WhatsApp Button -->
-    <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20para%20mi%20negocio%20%F0%9F%9B%92"
-        class="floating-whatsapp whatsapp-link" target="_blank" rel="noopener noreferrer"
-        aria-label="Contactar por WhatsApp">
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20%F0%9F%9B%92"
+        class="floating-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
+        <span class="wa-pulse"></span>
     </a>
 
-    <!-- Scripts -->
     <script src="./main.js"></script>
 </body>
-
 </html>
