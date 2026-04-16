@@ -1,120 +1,101 @@
-/**
- * Main JS — Siigo Aspel Redesign
- */
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
 
-document.addEventListener('DOMContentLoaded', () => {
+// Mobile hamburger menu
+const hamburger = document.querySelector('.header__hamburger');
+const nav = document.querySelector('.header__nav');
 
-    /* ───────────────────────────────────────────
-       1. Header scroll effect
-    ─────────────────────────────────────────── */
-    const header = document.getElementById('header');
-    const onScroll = () => {
-        header.classList.toggle('scrolled', window.scrollY > 40);
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+});
 
-    /* ───────────────────────────────────────────
-       2. Scroll reveal
-    ─────────────────────────────────────────── */
-    const reveals = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        },
-        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-    );
-    reveals.forEach(el => revealObserver.observe(el));
+nav.querySelectorAll('.header__link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+    });
+});
 
-    /* ───────────────────────────────────────────
-       3. Counter animation
-    ─────────────────────────────────────────── */
-    const counters = document.querySelectorAll('.counter');
-    const counterObserver = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter(entry.target);
-                    counterObserver.unobserve(entry.target);
-                }
-            });
-        },
-        { threshold: 0.5 }
-    );
+// Servicios filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.servicio-card');
 
-    counters.forEach(el => counterObserver.observe(el));
+function filterCards(filter) {
+    cards.forEach(card => {
+        if (card.dataset.category === filter) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+}
 
-    function animateCounter(el) {
-        const target = parseInt(el.dataset.target, 10);
-        const duration = 1800;
-        const start = performance.now();
+// Show only the active category on load
+const activeFilter = document.querySelector('.filter-btn.active');
+if (activeFilter) {
+    filterCards(activeFilter.dataset.filter);
+}
 
-        const step = (now) => {
-            const progress = Math.min((now - start) / duration, 1);
-            // easeOutQuart
-            const eased = 1 - Math.pow(1 - progress, 4);
-            el.textContent = Math.floor(eased * target);
-            if (progress < 1) requestAnimationFrame(step);
-            else el.textContent = target;
-        };
-        requestAnimationFrame(step);
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterCards(btn.dataset.filter);
+    });
+});
+
+// Proceso accordion (mobile)
+const steps = document.querySelectorAll('.proceso__step');
+
+steps.forEach(step => {
+    step.addEventListener('click', () => {
+        if (window.innerWidth > 768) return;
+        const isOpen = step.classList.contains('open');
+        steps.forEach(s => s.classList.remove('open'));
+        if (!isOpen) step.classList.add('open');
+    });
+});
+
+// Contact form submission via Web3Forms
+const form = document.querySelector('.contacto__form');
+const result = document.getElementById('form-result');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = form.querySelector('.contacto__submit');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = 'Enviando...';
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(form)
+        });
+        const data = await response.json();
+
+        if (data.success) {
+            result.className = 'contacto__result success';
+            result.textContent = 'Mensaje enviado con éxito. Daniela te contactará pronto.';
+            form.reset();
+        } else {
+            result.className = 'contacto__result error';
+            result.textContent = 'Hubo un error al enviar. Intenta de nuevo o contáctanos por WhatsApp.';
+        }
+    } catch {
+        result.className = 'contacto__result error';
+        result.textContent = 'Error de conexión. Intenta de nuevo o contáctanos por WhatsApp.';
     }
 
-    /* ───────────────────────────────────────────
-       4. Solutions Tabs
-    ─────────────────────────────────────────── */
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabPanels = document.querySelectorAll('.tab-panel');
-
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const target = btn.dataset.tab;
-
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabPanels.forEach(p => {
-                p.classList.remove('active');
-                p.style.animation = '';
-            });
-
-            btn.classList.add('active');
-            const panel = document.getElementById('tab-' + target);
-            if (panel) {
-                panel.classList.add('active');
-                panel.style.animation = 'tabFadeIn 0.35s ease forwards';
-            }
-        });
-    });
-
-    /* ───────────────────────────────────────────
-       5. Smooth scroll for nav links
-    ─────────────────────────────────────────── */
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const id = this.getAttribute('href');
-            if (id === '#') return;
-            const target = document.querySelector(id);
-            if (!target) return;
-            e.preventDefault();
-            const offset = header.offsetHeight + 12;
-            const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top, behavior: 'smooth' });
-        });
-    });
-
-    /* ───────────────────────────────────────────
-       6. Add tab fade-in keyframes dynamically
-    ─────────────────────────────────────────── */
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes tabFadeIn {
-            from { opacity: 0; transform: translateY(12px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-    `;
-    document.head.appendChild(style);
-
+    submitBtn.innerHTML = originalText;
+    submitBtn.disabled = false;
 });

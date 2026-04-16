@@ -1,506 +1,786 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Siigo Aspel — Software empresarial para negocios en México. Facturación CFDI 4.0, inventarios, nómina y contabilidad en un solo lugar.">
-    <meta property="og:title" content="Siigo Aspel | Control Total de tu Negocio">
-    <meta property="og:description" content="Automatiza tu facturación, inventario y nómina. El software empresarial que hace crecer tu negocio en México.">
-    <meta property="og:type" content="website">
-    <title>Siigo Aspel | Control Total de tu Negocio</title>
-
+    <title>Siigo Aspel | Ejecutiva Comercial</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <div class="logo">
-                <span class="logo-s">Siigo</span><span class="logo-dot">·</span><span class="logo-a">Aspel</span>
-            </div>
-            <nav class="nav-links">
-                <a href="#beneficios">Beneficios</a>
-                <a href="#soluciones">Soluciones</a>
-                <a href="#asesora">Asesora</a>
-                <a href="#testimonios">Testimonios</a>
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">Siigo Aspel</a>
+            <nav class="header__nav">
+                <a href="#ejecutiva" class="header__link">Ejecutiva</a>
+                <a href="#servicios" class="header__link">Servicios</a>
+                <a href="#que-hacemos" class="header__link">Qué hacemos</a>
+                <a href="#clientes" class="header__link">Clientes</a>
             </nav>
-            <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20para%20mi%20negocio%20%F0%9F%9B%92"
-                class="btn btn-nav" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Hablar Ahora
-            </a>
+            <a href="#agendar" class="btn btn--primary">Contáctanos</a>
+            <button class="header__hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-bg">
-            <div class="mesh-1"></div>
-            <div class="mesh-2"></div>
-            <div class="mesh-3"></div>
-            <div class="grid-overlay"></div>
-        </div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    Software #1 para Negocios en México 🇲🇽
+        <div class="hero__container">
+            <div class="hero__content">
+                <span class="hero__badge">Siigo Aspel | Soluciones para empresas mexicanas</span>
+                <h1 class="hero__title">Automatiza tu contabilidad y ventas en un solo sistema</h1>
+                <p class="hero__subtitle">Cumple con el SAT sin complicaciones. Sistemas integrados de administración, contabilidad y facturación CFDI 4.0. Reduce errores, ahorra tiempo y toma el control de tu negocio con asesoría de expertos.</p>
+                <div class="hero__ctas">
+                    <a href="#productos" class="btn btn--primary btn--lg">Ver Productos</a>
+                    <a href="#agendar" class="btn btn--outline btn--lg">Agendar Demo</a>
                 </div>
-                <h1 class="hero-headline">
-                    Controla tu negocio<br>
-                    <span class="text-accent">sin complicaciones.</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Facturación CFDI 4.0, inventario en tiempo real y nómina automatizada.
-                    Todo en un solo sistema, respaldado por Siigo Aspel.
-                </p>
-                <div class="hero-actions">
-                    <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20para%20mi%20negocio%20%F0%9F%9B%92"
-                        class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        Solicitar Demo Gratis
+                <div class="hero__metrics">
+                    <div class="hero__metric">
+                        <span class="hero__metric-value">10+</span>
+                        <span class="hero__metric-label">Productos integrados</span>
+                    </div>
+                    <div class="hero__metric">
+                        <span class="hero__metric-value">100%</span>
+                        <span class="hero__metric-label">Cumplimiento SAT</span>
+                    </div>
+                    <div class="hero__metric">
+                        <span class="hero__metric-value">24/7</span>
+                        <span class="hero__metric-label">Soporte y asesoría</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="multimedia/img/logo.jpeg" alt="Siigo Aspel Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ejecutiva Section -->
+    <section class="ejecutiva" id="ejecutiva">
+        <div class="ejecutiva__container">
+            <div class="ejecutiva__image">
+                <img src="multimedia/img/ejecutiva.jpeg" alt="Daniela Montoya - Ejecutiva Comercial Siigo Aspel">
+                <div class="ejecutiva__experience">
+                    <span class="ejecutiva__experience-number">5+</span>
+                    <span class="ejecutiva__experience-text">Años de experiencia</span>
+                </div>
+            </div>
+            <div class="ejecutiva__content">
+                <span class="section-badge">Tu asesora de confianza</span>
+                <h2 class="ejecutiva__name">Daniela Montoya</h2>
+                <p class="ejecutiva__role">Ejecutiva Comercial | Siigo Aspel</p>
+                <p class="ejecutiva__desc">Especialista con más de 5 años acompañando a empresarios y contadores de todo México en la implementación de soluciones contables y administrativas. Te brindo asesoría personalizada para que encuentres el sistema ideal según las necesidades reales de tu negocio, ya sea que estés en CDMX, Monterrey, Guadalajara o cualquier parte de la República.</p>
+                <div class="ejecutiva__highlight">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <p>Te ayudamos a elegir el sistema ideal con una asesoría personalizada y sin costo.</p>
+                </div>
+                <div class="ejecutiva__ctas">
+                    <a href="https://wa.me/5215599093539?text=Hola%20Daniela%2C%20me%20interesa%20una%20asesor%C3%ADa%20personalizada%20de%20Siigo%20Aspel"
+                        class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+                        Agendar asesoría gratuita
                     </a>
-                    <a href="#soluciones" class="btn btn-ghost">Ver Soluciones →</a>
-                </div>
-
-                <div class="trust-badges">
-                    <div class="trust-item">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        CFDI 4.0 Certificado
-                    </div>
-                    <div class="trust-item">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        100% en la Nube
-                    </div>
-                    <div class="trust-item">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        Soporte Especializado
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll-hint">
-            <div class="scroll-line"></div>
-            <span>Descubre más</span>
-        </div>
-    </section>
-
-    <!-- Stats Bar -->
-    <section class="stats-bar">
-        <div class="container stats-grid">
-            <div class="stat-block reveal">
-                <div class="stat-number"><span class="counter" data-target="500">0</span>+</div>
-                <div class="stat-desc">Empresas que confían en nosotros</div>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-block reveal" style="--delay: 0.1s">
-                <div class="stat-number">20+</div>
-                <div class="stat-desc">Años de experiencia en el mercado</div>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-block reveal" style="--delay: 0.2s">
-                <div class="stat-number">100%</div>
-                <div class="stat-desc">Cumplimiento fiscal garantizado</div>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-block reveal" style="--delay: 0.3s">
-                <div class="stat-number"><span class="counter" data-target="48">0</span>h</div>
-                <div class="stat-desc">Implementación rápida y sin dolor</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section id="beneficios" class="benefits">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-tag">¿Por qué Siigo Aspel?</div>
-                <h2 class="section-title">Diseñado para <span class="text-accent">ganar tiempo</span><br>y perder dolores de cabeza.</h2>
-            </div>
-            <div class="benefits-grid">
-                <div class="benefit-card reveal" style="--delay: 0s">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    <h3>Ahorra Horas Cada Día</h3>
-                    <p>Automatiza cortes de caja, cálculo de impuestos y reportes. Tu tiempo vale para vender, no para papeleos.</p>
-                    <div class="benefit-arrow">→</div>
-                </div>
-                <div class="benefit-card reveal" style="--delay: 0.1s">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <h3>Cero Multas del SAT</h3>
-                    <p>Plataforma 100% actualizada con CFDI 4.0 y Carta Porte. Factura sin miedo y con certeza legal total.</p>
-                    <div class="benefit-arrow">→</div>
-                </div>
-                <div class="benefit-card reveal" style="--delay: 0.2s">
-                    <div class="benefit-icon-wrap">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                    </div>
-                    <h3>Control desde Cualquier Lugar</h3>
-                    <p>Accede a ventas, inventario y reportes en tiempo real desde tu celular. Decisiones con datos, no corazonadas.</p>
-                    <div class="benefit-arrow">→</div>
+                    <a href="#servicios" class="btn btn--outline btn--lg">Ver productos</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Solutions -->
-    <section id="soluciones" class="solutions">
-        <div class="container">
-            <div class="section-header reveal text-center">
-                <div class="section-tag">Módulos</div>
-                <h2 class="section-title">Todo lo que tu negocio<br><span class="text-accent">necesita en un solo sistema.</span></h2>
+    <!-- Servicios Section -->
+    <section class="servicios" id="servicios">
+        <div class="servicios__container">
+            <span class="section-badge">Portafolio de Soluciones</span>
+            <h2 class="section-title">Todo lo que tu empresa necesita, en un solo ecosistema</h2>
+            <p class="section-subtitle">Soluciones 100% compatibles con las obligaciones fiscales mexicanas. Desde la administración hasta la manufactura, con CFDI 4.0 y cumplimiento SAT incluido.</p>
+
+            <!-- Filtros de categoría -->
+            <div class="servicios__filters">
+                <button class="filter-btn active" data-filter="admin">Administración</button>
+                <button class="filter-btn" data-filter="fact">Facturación</button>
+                <button class="filter-btn" data-filter="conta">Contabilidad</button>
+                <button class="filter-btn" data-filter="nomina">Nómina y RH</button>
+                <button class="filter-btn" data-filter="pv">Punto de Venta</button>
+                <button class="filter-btn" data-filter="finanzas">Tesorería</button>
+                <button class="filter-btn" data-filter="manufactura">Manufactura</button>
+                <button class="filter-btn" data-filter="extras">Complementos</button>
             </div>
 
-            <div class="solutions-tabs reveal">
-                <div class="tabs-nav">
-                    <button class="tab-btn active" data-tab="admin">📊 Administración</button>
-                    <button class="tab-btn" data-tab="fact">🧾 Facturación</button>
-                    <button class="tab-btn" data-tab="cont">📈 Contabilidad</button>
-                    <button class="tab-btn" data-tab="nom">👥 Nómina y RH</button>
-                    <button class="tab-btn" data-tab="pdv">🏷️ Punto de Venta</button>
-                    <button class="tab-btn" data-tab="fisc">🏛️ Siigo Fiscal</button>
+            <!-- Grid de servicios -->
+            <div class="servicios__grid">
+
+                <!-- 1. Administración -->
+                <div class="servicio-card" data-category="admin">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Administración</span>
+                    <h3 class="servicio-card__title">Siigo Nube</h3>
+                    <p class="servicio-card__desc">Gestión administrativa 100% web. Controla tu empresa desde cualquier lugar.</p>
+                    <div class="servicio-card__variants">
+                        <span>Gestión Inicio</span>
+                        <span>Gestión Premium</span>
+                    </div>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Siigo%20Nube" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
                 </div>
 
-                <div class="tabs-content">
-                    <div class="tab-panel active" id="tab-admin">
-                        <div class="tab-inner">
-                            <div class="tab-text">
-                                <h3>Administración Centralizada</h3>
-                                <p>Toma el control total de las finanzas de tu negocio con visibilidad en tiempo real.</p>
-                                <ul class="feat-list">
-                                    <li>Control de cuentas por cobrar y por pagar</li>
-                                    <li>Flujo de efectivo y bancos detallado</li>
-                                    <li>Reportes estratégicos para toma de decisiones</li>
-                                    <li>Multimoneda y múltiples sucursales</li>
-                                </ul>
-                            </div>
-                            <div class="tab-graphic">
-                                <div class="mock-dashboard">
-                                    <div class="mock-bar"><div class="mock-bar-fill" style="width:85%"></div></div>
-                                    <div class="mock-bar"><div class="mock-bar-fill" style="width:62%"></div></div>
-                                    <div class="mock-bar"><div class="mock-bar-fill" style="width:91%"></div></div>
-                                    <div class="mock-bar"><div class="mock-bar-fill" style="width:44%"></div></div>
-                                    <div class="mock-stat-row">
-                                        <div class="mock-stat"><span>$1.2M</span><small>Cobrado</small></div>
-                                        <div class="mock-stat"><span>$340K</span><small>Por cobrar</small></div>
-                                        <div class="mock-stat up"><span>+18%</span><small>vs mes ant.</small></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="servicio-card" data-category="admin">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12"/></svg>
                     </div>
-
-                    <div class="tab-panel" id="tab-fact">
-                        <div class="tab-inner">
-                            <div class="tab-text">
-                                <h3>Facturación CFDI 4.0</h3>
-                                <p>Emite facturas electrónicas en segundos, sin errores y siempre al día con el SAT.</p>
-                                <ul class="feat-list">
-                                    <li>Emisión de CFDI 4.0 sin errores</li>
-                                    <li>Facturación global y complementos de pago</li>
-                                    <li>Envío automático de comprobantes</li>
-                                    <li>Catálogo SAT integrado y actualizado</li>
-                                </ul>
-                            </div>
-                            <div class="tab-graphic">
-                                <div class="mock-invoice">
-                                    <div class="inv-header">
-                                        <span class="inv-tag cfdi">CFDI 4.0 ✓</span>
-                                        <span class="inv-folio">Folio #A-00847</span>
-                                    </div>
-                                    <div class="inv-line"></div>
-                                    <div class="inv-row"><span>Subtotal</span><span>$12,500.00</span></div>
-                                    <div class="inv-row"><span>IVA 16%</span><span>$2,000.00</span></div>
-                                    <div class="inv-row total"><span>Total</span><span>$14,500.00</span></div>
-                                    <div class="inv-stamp">Timbrado SAT ✓</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-panel" id="tab-cont">
-                        <div class="tab-inner">
-                            <div class="tab-text">
-                                <h3>Contabilidad Electrónica</h3>
-                                <p>Genera estados financieros automáticos y cumple con la contabilidad electrónica ante el SAT.</p>
-                                <ul class="feat-list">
-                                    <li>Pólizas automáticas por operación</li>
-                                    <li>Descarga masiva de XML y conciliación</li>
-                                    <li>Balance General y Estado de Resultados</li>
-                                    <li>Contabilidad Electrónica garantizada</li>
-                                </ul>
-                            </div>
-                            <div class="tab-graphic">
-                                <div class="mock-dashboard">
-                                    <div class="mock-chart-label">Balance General</div>
-                                    <div class="mock-donut-wrap">
-                                        <div class="mock-donut"></div>
-                                        <div class="mock-legend">
-                                            <span class="leg-item"><em style="background:#00e676"></em>Activo 68%</span>
-                                            <span class="leg-item"><em style="background:#0051ff"></em>Pasivo 21%</span>
-                                            <span class="leg-item"><em style="background:#7b8fab"></em>Capital 11%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-panel" id="tab-nom">
-                        <div class="tab-inner">
-                            <div class="tab-text">
-                                <h3>Nómina y Recursos Humanos</h3>
-                                <p>Paga a tu equipo sin errores, cumple con el IMSS y timbra recibos en segundos.</p>
-                                <ul class="feat-list">
-                                    <li>Cálculo exacto de sueldos, ISR e IMSS/SUA</li>
-                                    <li>Timbrado ilimitado de CFDI 4.0 nómina</li>
-                                    <li>Gestión de incidencias, vacaciones y horas extra</li>
-                                    <li>Expediente digital por empleado</li>
-                                </ul>
-                            </div>
-                            <div class="tab-graphic">
-                                <div class="mock-payroll">
-                                    <div class="payroll-row header-row"><span>Empleado</span><span>Neto</span><span>Estado</span></div>
-                                    <div class="payroll-row"><span>J. García</span><span>$8,400</span><span class="pay-ok">✓</span></div>
-                                    <div class="payroll-row"><span>M. López</span><span>$12,200</span><span class="pay-ok">✓</span></div>
-                                    <div class="payroll-row"><span>A. Torres</span><span>$6,800</span><span class="pay-ok">✓</span></div>
-                                    <div class="payroll-total">Total nómina: <strong>$27,400</strong></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-panel" id="tab-pdv">
-                        <div class="tab-inner">
-                            <div class="tab-text">
-                                <h3>Punto de Venta Ágil</h3>
-                                <p>Agiliza tus ventas en mostrador, controla tu caja y actualiza tu inventario en automático.</p>
-                                <ul class="feat-list">
-                                    <li>Ventas rápidas con escáner de código de barras</li>
-                                    <li>Control de caja, cortes y arqueos</li>
-                                    <li>Descuento automático de inventario</li>
-                                    <li>Impresión de tickets y cajón de dinero</li>
-                                </ul>
-                            </div>
-                            <div class="tab-graphic">
-                                <div class="mock-pos">
-                                    <div class="pos-screen">
-                                        <div class="pos-item"><span>Leche 1L x2</span><span>$54</span></div>
-                                        <div class="pos-item"><span>Pan integral x1</span><span>$38</span></div>
-                                        <div class="pos-item"><span>Jugo naranja x1</span><span>$25</span></div>
-                                    </div>
-                                    <div class="pos-total">Total: <strong>$117.00</strong></div>
-                                    <div class="pos-btn">COBRAR →</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-panel" id="tab-fisc">
-                        <div class="tab-inner">
-                            <div class="tab-text">
-                                <h3>Siigo Fiscal — Blindaje SAT</h3>
-                                <p>Audita tus comprobantes antes que el SAT. Detecta riesgos y actúa antes de que sean multas.</p>
-                                <ul class="feat-list">
-                                    <li>Auditoría preventiva de XML</li>
-                                    <li>Validación contra listas negras SAT (EFOS/EDOS)</li>
-                                    <li>Recuperación de facturas emitidas y recibidas</li>
-                                    <li>Declaraciones informativas simplificadas</li>
-                                </ul>
-                            </div>
-                            <div class="tab-graphic">
-                                <div class="mock-audit">
-                                    <div class="audit-row ok"><span class="audit-icon">✓</span><span>CFDI válidos: 1,248</span></div>
-                                    <div class="audit-row warn"><span class="audit-icon">⚠</span><span>Con alertas: 3</span></div>
-                                    <div class="audit-row bad"><span class="audit-icon">✕</span><span>EFOS detectados: 0</span></div>
-                                    <div class="audit-score">Salud fiscal: <strong>98%</strong></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="servicio-card__tag">Administración</span>
+                    <h3 class="servicio-card__title">SAE</h3>
+                    <p class="servicio-card__desc">Control total del ciclo de compra-venta: inventarios, clientes, proveedores y facturación.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20SAE" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
                 </div>
+
+                <div class="servicio-card" data-category="admin">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Administración</span>
+                    <h3 class="servicio-card__title">ADM</h3>
+                    <p class="servicio-card__desc">Gestión operativa desde tu celular. Ideal para emprendedores en movimiento.</p>
+                    <div class="servicio-card__variants">
+                        <span>Básica</span>
+                        <span>Premium</span>
+                    </div>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20ADM" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <!-- 2. Facturación -->
+                <div class="servicio-card" data-category="fact">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Facturación</span>
+                    <h3 class="servicio-card__title">Facturación Nube</h3>
+                    <p class="servicio-card__desc">Emite CFDI 4.0 de forma rápida y segura desde cualquier navegador.</p>
+                    <div class="servicio-card__variants">
+                        <span>Facturación Nube</span>
+                        <span>Facturación Nube Dúo</span>
+                    </div>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Facturaci%C3%B3n%20Nube" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="fact">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Facturación</span>
+                    <h3 class="servicio-card__title">ADM Timbres</h3>
+                    <p class="servicio-card__desc">Paquetes de folios para timbrado electrónico. Escala según tu volumen de facturación.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20ADM%20Timbres" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="fact">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Facturación</span>
+                    <h3 class="servicio-card__title">Facture</h3>
+                    <p class="servicio-card__desc">Sistema sencillo para emisión de facturas y notas de crédito sin complicaciones.</p>
+                    <div class="servicio-card__variants">
+                        <span>Facture 1</span>
+                        <span>Facture 2-99</span>
+                    </div>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Facture" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <!-- 3. Contabilidad -->
+                <div class="servicio-card" data-category="conta">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Contabilidad</span>
+                    <h3 class="servicio-card__title">COI</h3>
+                    <p class="servicio-card__desc">Sistema de contabilidad integral. Procesa, integra y mantiene actualizada tu información contable y fiscal.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20COI" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card servicio-card--featured" data-category="conta">
+                    <span class="servicio-card__featured-badge">Recomendado</span>
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Contabilidad</span>
+                    <h3 class="servicio-card__title">Siigo Fiscal</h3>
+                    <p class="servicio-card__desc">Herramienta de auditoría y conciliación avanzada con el SAT. Ideal para contadores y despachos que necesitan cumplimiento fiscal total y automatizado.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Siigo%20Fiscal" class="servicio-card__cta servicio-card__cta--featured" target="_blank" rel="noopener noreferrer">Solicitar demo gratuita <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <!-- 4. Nómina y RH -->
+                <div class="servicio-card" data-category="nomina">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Nómina y RH</span>
+                    <h3 class="servicio-card__title">NOI</h3>
+                    <p class="servicio-card__desc">Automatiza el cálculo de nómina y cumple con las leyes laborales vigentes sin errores.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20NOI" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="nomina">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Nómina y RH</span>
+                    <h3 class="servicio-card__title">NOI Asistente</h3>
+                    <p class="servicio-card__desc">App en la nube para control de asistencia y gestión de incidencias del personal.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20NOI%20Asistente" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <!-- 5. Punto de Venta -->
+                <div class="servicio-card" data-category="pv">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20M6 16h.01M10 16h.01"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Punto de Venta</span>
+                    <h3 class="servicio-card__title">Caja</h3>
+                    <p class="servicio-card__desc">Convierte cualquier equipo en punto de venta: manejo de ingresos, cajas y cortes de caja.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Aspel%20Caja" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="pv">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Punto de Venta</span>
+                    <h3 class="servicio-card__title">ADM Tienda</h3>
+                    <p class="servicio-card__desc">Gestión de ventas desde dispositivos móviles. Integración con ADM Básico y Premium.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20ADM%20Tienda" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <!-- 6. Tesorería -->
+                <div class="servicio-card" data-category="finanzas">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Tesorería</span>
+                    <h3 class="servicio-card__title">Banco</h3>
+                    <p class="servicio-card__desc">Control financiero de cuentas bancarias y conciliación automática de movimientos.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Aspel%20Banco" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <!-- 7. Manufactura -->
+                <div class="servicio-card" data-category="manufactura">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Manufactura</span>
+                    <h3 class="servicio-card__title">PROD</h3>
+                    <p class="servicio-card__desc">Planeación y control de procesos de fabricación, costos de producción y materiales.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Aspel%20PROD" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <!-- 8. Complementos -->
+                <div class="servicio-card" data-category="extras">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Complementos</span>
+                    <h3 class="servicio-card__title">Espacios Aspel</h3>
+                    <p class="servicio-card__desc">Almacenamiento seguro en la nube para tus sistemas y respaldos.</p>
+                    <div class="servicio-card__variants">
+                        <span>4 GB</span>
+                        <span>10 GB</span>
+                        <span>40 GB</span>
+                        <span>80 GB</span>
+                    </div>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Espacios%20Aspel" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="extras">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Complementos</span>
+                    <h3 class="servicio-card__title">Servidor Virtual</h3>
+                    <p class="servicio-card__desc">Hosting especializado para sistemas Aspel con acceso remoto seguro.</p>
+                    <div class="servicio-card__variants">
+                        <span>Básico</span>
+                        <span>Estándar</span>
+                        <span>Integral</span>
+                        <span>Plus</span>
+                        <span>Platinum</span>
+                        <span>Elite</span>
+                    </div>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Servidor%20Virtual" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="extras">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Complementos</span>
+                    <h3 class="servicio-card__title">Pólizas de Soporte</h3>
+                    <p class="servicio-card__desc">Asistencia técnica profesional con diferentes niveles de atención.</p>
+                    <div class="servicio-card__variants">
+                        <span>Básica</span>
+                        <span>Remota</span>
+                        <span>Típica</span>
+                        <span>Especial</span>
+                        <span>Por evento</span>
+                    </div>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20P%C3%B3lizas%20de%20Soporte" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="extras">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Complementos</span>
+                    <h3 class="servicio-card__title">Cursos y Capacitación</h3>
+                    <p class="servicio-card__desc">Capacitación y adiestramiento para que tu equipo domine cada sistema Aspel.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Cursos%20Aspel" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="extras">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Complementos</span>
+                    <h3 class="servicio-card__title">Paquetes de Timbres</h3>
+                    <p class="servicio-card__desc">Folios digitales en diversas cantidades, desde 50 hasta 100,000 unidades.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Paquetes%20de%20Timbres" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
+                <div class="servicio-card" data-category="extras">
+                    <div class="servicio-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+                    </div>
+                    <span class="servicio-card__tag">Complementos</span>
+                    <h3 class="servicio-card__title">Actualización y Migración</h3>
+                    <p class="servicio-card__desc">Mantén el cumplimiento legal y migra al modelo de suscripción sin perder datos.</p>
+                    <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20info%20sobre%20Actualizaci%C3%B3n%20y%20Migraci%C3%B3n" class="servicio-card__cta" target="_blank" rel="noopener noreferrer">Me interesa <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg></a>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Asesora Section -->
-    <section id="asesora" class="advisor-section">
-        <div class="advisor-bg">
-            <div class="adv-mesh-1"></div>
-            <div class="adv-mesh-2"></div>
-        </div>
-        <div class="container advisor-container">
-            <div class="advisor-content reveal">
-                <div class="section-tag light">Tu Asesora Personal</div>
-                <h2 class="advisor-headline">
-                    No solo un software.<br>
-                    <span class="text-accent">Un equipo de expertos a tu lado.</span>
-                </h2>
-                <p class="advisor-text">
-                    Expertos que te guiarán paso a paso desde la implementación hasta que tu equipo domine el sistema. Capacitación incluida, sin costos ocultos.
-                </p>
-                <ul class="advisor-perks">
-                    <li>
-                        <div class="perk-icon">🚀</div>
-                        <div><strong>Implementación en 48h</strong><br><small>Configura y echa a andar tu sistema desde el primer día</small></div>
-                    </li>
-                    <li>
-                        <div class="perk-icon">🎓</div>
-                        <div><strong>Capacitación para tu equipo</strong><br><small>Tu personal aprende a dominar cada módulo contigo</small></div>
-                    </li>
-                    <li>
-                        <div class="perk-icon">💬</div>
-                        <div><strong>Soporte directo por WhatsApp</strong><br><small>Respuesta rápida cuando más lo necesitas</small></div>
-                    </li>
-                </ul>
-                <a href="https://wa.me/525599093539?text=Hola%20Daniela,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20para%20mi%20negocio%20%F0%9F%9B%92"
-                    class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    Hablar con Asesor
+    <!-- Videos Section -->
+    <section class="videos" id="videos">
+        <div class="videos__container">
+            <span class="section-badge">Conócelos en acción</span>
+            <h2 class="section-title">Mira cómo funcionan nuestros sistemas</h2>
+            <p class="section-subtitle">Explora cada producto en video y descubre cómo puede transformar tu operación.</p>
+
+            <div class="videos__track">
+                <a href="https://www.youtube.com/watch?v=ojF9bem2T-s" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/ojF9bem2T-s/mqdefault.jpg" alt="Video Siigo Nube" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">Siigo Nube</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=YCMNo6d5wMM" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/YCMNo6d5wMM/mqdefault.jpg" alt="Video ADM" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">ADM</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=r_bbHLli1TA" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/r_bbHLli1TA/mqdefault.jpg" alt="Video SAE" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">SAE</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=IZUWPugYmpk" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/IZUWPugYmpk/mqdefault.jpg" alt="Video Siigo Fiscal" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">Siigo Fiscal</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=F3hiMo_kcLQ" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/F3hiMo_kcLQ/mqdefault.jpg" alt="Video COI" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">COI</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=IFPuKt-ozko" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/IFPuKt-ozko/mqdefault.jpg" alt="Video NOI" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">NOI</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=-xRpa6knQLE" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/-xRpa6knQLE/mqdefault.jpg" alt="Video NOI Asistente" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">NOI Asistente</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=MNx_cDT1WFc" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/MNx_cDT1WFc/mqdefault.jpg" alt="Video Siigo Facturación" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">Facturación Nube</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=IXu95o-Jy_o" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/IXu95o-Jy_o/mqdefault.jpg" alt="Video Aspel Facture" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">Aspel Facture</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=Qk8z0-OqnGE" class="video-card" target="_blank" rel="noopener noreferrer">
+                    <div class="video-card__thumb">
+                        <img src="https://img.youtube.com/vi/Qk8z0-OqnGE/mqdefault.jpg" alt="Video Aspel Caja" loading="lazy">
+                        <div class="video-card__play">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="video-card__title">Aspel Caja</span>
                 </a>
             </div>
-            <div class="advisor-image reveal" style="--delay: 0.2s">
-                <div class="advisor-img-wrap">
-                    <img src="./WhatsApp%20Image%202026-04-01%20at%209.36.47%20PM.jpeg" alt="Daniela Montoya - Consultora Siigo Aspel">
-                    <div class="advisor-badge">
-                        <div class="adv-badge-dot"></div>
-                        Disponible ahora
-                    </div>
-                    <div class="advisor-quote">
-                        "No es solo un sistema,<br>es el <strong>control total</strong> de tu negocio."
+        </div>
+    </section>
+
+    <!-- Qué Hacemos Section -->
+    <section class="proceso" id="que-hacemos">
+        <div class="proceso__container">
+            <div class="proceso__header">
+                <span class="section-badge">Nuestro método</span>
+                <h2 class="section-title" style="margin-left:0; margin-right:0; text-align:left;">¿Qué hacemos?</h2>
+                <p class="proceso__intro">Analizamos tu negocio y tus procesos actuales para entender tus necesidades reales. Con base en este diagnóstico, te recomendamos el sistema contable y administrativo más adecuado para cumplir con las normas del SAT, evitando que inviertas en herramientas que no necesitas.</p>
+            </div>
+
+            <div class="proceso__steps">
+                <div class="proceso__step">
+                    <span class="proceso__step-number">01</span>
+                    <div class="proceso__step-content">
+                        <div class="proceso__step-header">
+                            <h3 class="proceso__step-title">Diagnóstico de tu negocio</h3>
+                            <svg class="proceso__step-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                        <p class="proceso__step-desc">Escuchamos y analizamos a fondo tus procesos actuales, el tamaño de tu operación y los retos fiscales y administrativos que enfrentas día a día en México.</p>
                     </div>
                 </div>
+
+                <div class="proceso__step">
+                    <span class="proceso__step-number">02</span>
+                    <div class="proceso__step-content">
+                        <div class="proceso__step-header">
+                            <h3 class="proceso__step-title">Recomendación personalizada</h3>
+                            <svg class="proceso__step-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                        <p class="proceso__step-desc">Te proponemos el sistema o combinación de sistemas Siigo Aspel que realmente necesitas, sin venderte funciones que no vas a usar.</p>
+                    </div>
+                </div>
+
+                <div class="proceso__step">
+                    <span class="proceso__step-number">03</span>
+                    <div class="proceso__step-content">
+                        <div class="proceso__step-header">
+                            <h3 class="proceso__step-title">Demostración en vivo</h3>
+                            <svg class="proceso__step-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                        <p class="proceso__step-desc">Te mostramos cómo funciona el sistema en un escenario real con tus datos y procesos, para que veas el impacto antes de decidir.</p>
+                    </div>
+                </div>
+
+                <div class="proceso__step">
+                    <span class="proceso__step-number">04</span>
+                    <div class="proceso__step-content">
+                        <div class="proceso__step-header">
+                            <h3 class="proceso__step-title">Implementación y configuración</h3>
+                            <svg class="proceso__step-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                        <p class="proceso__step-desc">Te acompañamos en la instalación, configuración inicial, conexión con el SAT y migración de datos para que arranques sin fricciones.</p>
+                    </div>
+                </div>
+
+                <div class="proceso__step">
+                    <span class="proceso__step-number">05</span>
+                    <div class="proceso__step-content">
+                        <div class="proceso__step-header">
+                            <h3 class="proceso__step-title">Capacitación a tu equipo</h3>
+                            <svg class="proceso__step-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                        <p class="proceso__step-desc">Entrenamos a tu personal para que dominen el sistema desde el primer día y aprovechen todas sus funcionalidades.</p>
+                    </div>
+                </div>
+
+                <div class="proceso__step">
+                    <span class="proceso__step-number">06</span>
+                    <div class="proceso__step-content">
+                        <div class="proceso__step-header">
+                            <h3 class="proceso__step-title">Soporte continuo</h3>
+                            <svg class="proceso__step-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                        <p class="proceso__step-desc">Seguimos contigo después de la implementación. Cualquier duda, ajuste, actualización del SAT o cambio normativo, cuentas con respaldo permanente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proceso__cta">
+                <a href="https://wa.me/5215599093539?text=Hola%2C%20quiero%20agendar%20un%20diagn%C3%B3stico%20gratuito%20de%20mi%20negocio"
+                   class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+                    Agendar diagnóstico gratuito
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonios" class="testimonials">
-        <div class="container">
-            <div class="section-header reveal text-center">
-                <div class="section-tag">Testimonios</div>
-                <h2 class="section-title">Empresarios que ya<br><span class="text-accent">transformaron su operación.</span></h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testi-card reveal">
-                    <div class="testi-stars">★★★★★</div>
-                    <div class="testi-quote-mark">"</div>
-                    <p class="testi-text">Antes pasábamos horas descifrando descuadres de inventario. Con Siigo Aspel, tenemos certeza total de lo que hay en bodega y piso de ventas.</p>
-                    <div class="testi-author">
-                        <div class="testi-avatar">RM</div>
-                        <div>
-                            <strong>Roberto Mendoza</strong>
-                            <span>Gerente · Supermercados El Fresno</span>
+    <!-- Clientes Section -->
+    <section class="clientes" id="clientes">
+        <div class="clientes__container">
+            <span class="section-badge">Lo que dicen nuestros clientes</span>
+            <h2 class="section-title">Empresas que ya transformaron su gestión</h2>
+            <p class="section-subtitle">La confianza de quienes nos eligen es nuestra mejor carta de presentación.</p>
+
+            <div class="clientes__grid">
+
+                <div class="cliente-card">
+                    <div class="cliente-card__stars">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="cliente-card__quote">"Desde que implementamos SAE y COI con la asesoría de Daniela, redujimos un 60% el tiempo en conciliaciones fiscales. Ahora cerramos mes en 2 días, no en una semana."</p>
+                    <div class="cliente-card__author">
+                        <div class="cliente-card__avatar">RA</div>
+                        <div class="cliente-card__info">
+                            <span class="cliente-card__name">Roberto Aguilar</span>
+                            <span class="cliente-card__company">Director General, Distribuidora Norteña S.A. de C.V. — Monterrey, N.L.</span>
                         </div>
                     </div>
                 </div>
-                <div class="testi-card reveal" style="--delay: 0.15s">
-                    <div class="testi-stars">★★★★★</div>
-                    <div class="testi-quote-mark">"</div>
-                    <p class="testi-text">La transición al CFDI 4.0 nos asustaba, pero el sistema nos guio paso a paso. La facturación más rápida que hemos tenido jamás.</p>
-                    <div class="testi-author">
-                        <div class="testi-avatar">CR</div>
-                        <div>
-                            <strong>Carmen Ruiz</strong>
-                            <span>Administración · Abarrotes La Principal</span>
+
+                <div class="cliente-card">
+                    <div class="cliente-card__stars">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="cliente-card__quote">"Llevaba años facturando a mano y con errores constantes. Daniela me recomendó Facturación Nube y en una semana ya estábamos operando sin un solo problema con el SAT. Increíble servicio."</p>
+                    <div class="cliente-card__author">
+                        <div class="cliente-card__avatar">MV</div>
+                        <div class="cliente-card__info">
+                            <span class="cliente-card__name">Martha Valdés</span>
+                            <span class="cliente-card__company">Contadora independiente, Despacho Valdés & Asociados — CDMX</span>
                         </div>
                     </div>
                 </div>
-                <div class="testi-card reveal" style="--delay: 0.3s">
-                    <div class="testi-stars">★★★★★</div>
-                    <div class="testi-quote-mark">"</div>
-                    <p class="testi-text">Desde que implementamos Aspel COI / Siigo Fiscal, la gestión contable mejoró por completo. Logramos automatizar procesos y reducir errores en pocos días; ahora contamos con información financiera siempre actualizada y un equipo totalmente adaptado al sistema.</p>
-                    <div class="testi-author">
-                        <div class="testi-avatar">LV</div>
-                        <div>
-                            <strong>Luis Vargas</strong>
-                            <span>Director · Mini Super La Familia</span>
+
+                <div class="cliente-card">
+                    <div class="cliente-card__stars">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 0 0 .951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="cliente-card__quote">"Implementamos NOI y NOI Asistente para manejar la nómina de nuestras 3 sucursales. El proceso que antes nos tomaba 3 días ahora lo resolvemos en una tarde. La asesoría fue clave para elegir bien."</p>
+                    <div class="cliente-card__author">
+                        <div class="cliente-card__avatar">JL</div>
+                        <div class="cliente-card__info">
+                            <span class="cliente-card__name">Jorge López Hernández</span>
+                            <span class="cliente-card__company">Gerente de Operaciones, Grupo Gastronómico del Bajío — León, Gto.</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="cta-final">
-        <div class="cta-bg">
-            <div class="cta-mesh-1"></div>
-            <div class="cta-mesh-2"></div>
-        </div>
-        <div class="container cta-content reveal">
-            <div class="cta-tag">¿Listo para empezar?</div>
-            <h2 class="cta-headline">Agenda tu demo gratis<br><span class="text-accent">y empieza hoy mismo.</span></h2>
-            <p class="cta-sub">Implementación rápida · Capacitación incluida · Soporte especializado</p>
-            <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20agendar%20una%20demo%20de%20Siigo%20Aspel%20%F0%9F%9B%92"
-                class="btn btn-cta" target="_blank" rel="noopener noreferrer">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Quiero mi Demo Gratis
-            </a>
+    <!-- Formulario de Contacto -->
+    <section class="contacto" id="agendar">
+        <div class="contacto__container">
+            <div class="contacto__info">
+                <span class="section-badge">Contáctanos</span>
+                <h2 class="contacto__title">Solicita tu asesoría sin costo</h2>
+                <p class="contacto__desc">Completa el formulario y Daniela se pondrá en contacto contigo para agendar una asesoría personalizada sin compromiso.</p>
+
+                <div class="contacto__benefits">
+                    <div class="contacto__benefit">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>Asesoría 100% gratuita</span>
+                    </div>
+                    <div class="contacto__benefit">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>Sin compromiso de compra</span>
+                    </div>
+                    <div class="contacto__benefit">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>Respuesta en menos de 24 hrs</span>
+                    </div>
+                    <div class="contacto__benefit">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>Diagnóstico personalizado</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contacto__form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f7e5713e-4fde-4af5-99cc-5e69716aaa83">
+                <input type="hidden" name="subject" value="Nuevo lead desde Landing Siigo Aspel">
+                <input type="hidden" name="from_name" value="Landing Siigo Aspel">
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. María García López" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" placeholder="Ej. +52 55 1234 5678" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="Ej. maria@empresa.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="empresa">Nombre de la empresa</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Ej. Distribuidora del Norte S.A.">
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Servicio de interés</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="" disabled selected>Selecciona un servicio</option>
+                        <optgroup label="Administración">
+                            <option value="Siigo Nube">Siigo Nube</option>
+                            <option value="SAE">SAE</option>
+                            <option value="ADM">ADM</option>
+                        </optgroup>
+                        <optgroup label="Facturación">
+                            <option value="Facturación Nube">Facturación Nube</option>
+                            <option value="ADM Timbres">ADM Timbres</option>
+                            <option value="Facture">Facture</option>
+                        </optgroup>
+                        <optgroup label="Contabilidad">
+                            <option value="COI">COI</option>
+                            <option value="Siigo Fiscal">Siigo Fiscal</option>
+                        </optgroup>
+                        <optgroup label="Nómina y RH">
+                            <option value="NOI">NOI</option>
+                            <option value="NOI Asistente">NOI Asistente</option>
+                        </optgroup>
+                        <optgroup label="Otros">
+                            <option value="Aspel Caja">Aspel Caja</option>
+                            <option value="ADM Tienda">ADM Tienda</option>
+                            <option value="Banco">Banco (Tesorería)</option>
+                            <option value="PROD">PROD (Manufactura)</option>
+                            <option value="Servidor Virtual">Servidor Virtual</option>
+                            <option value="Otro">Otro / No estoy seguro</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Observaciones o descripción de lo que necesitas</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu negocio: giro comercial, cuántos usuarios necesitas, qué procesos quieres automatizar, si ya cuentas con e.firma o FIEL..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--lg contacto__submit">
+                    Enviar solicitud
+                    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+
+                <div class="contacto__result" id="form-result"></div>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <div class="logo">
-                    <span class="logo-s">Siigo</span><span class="logo-dot">·</span><span class="logo-a">Aspel</span>
+        <div class="footer__container">
+            <div class="footer__brand">
+                <span class="footer__logo">Siigo Aspel</span>
+                <p class="footer__tagline">Soluciones contables y administrativas para empresas mexicanas.</p>
+            </div>
+
+            <div class="footer__nav">
+                <h4 class="footer__heading">Navegación</h4>
+                <a href="#ejecutiva">Ejecutiva</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#que-hacemos">Qué hacemos</a>
+                <a href="#clientes">Clientes</a>
+                <a href="#agendar">Contacto</a>
+            </div>
+
+            <div class="footer__contact">
+                <h4 class="footer__heading">Tu ejecutiva</h4>
+                <div class="footer__contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span>Daniela Montoya</span>
                 </div>
-                <p>Potenciando el crecimiento empresarial en México con tecnología de vanguardia.</p>
-                <a href="https://wa.me/525599093539" class="footer-wa" target="_blank" rel="noopener noreferrer">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    wa.me/525599093539
-                </a>
-            </div>
-            <div class="footer-col">
-                <h4>Soluciones</h4>
-                <a href="#soluciones">Administración</a>
-                <a href="#soluciones">Facturación CFDI 4.0</a>
-                <a href="#soluciones">Contabilidad</a>
-                <a href="#soluciones">Nómina y RH</a>
-                <a href="#soluciones">Punto de Venta</a>
-            </div>
-            <div class="footer-col">
-                <h4>Empresa</h4>
-                <a href="#asesora">Nuestra Asesora</a>
-                <a href="#testimonios">Casos de Éxito</a>
-                <a href="#">Términos y Condiciones</a>
-                <a href="#">Aviso de Privacidad</a>
-            </div>
-            <div class="footer-col">
-                <h4>Contacto</h4>
-                <p>📍 Ciudad de México, México</p>
-                <p>📲 Atención vía WhatsApp</p>
-                <p>⏰ Lun–Vie 9:00–18:00</p>
+                <div class="footer__contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <a href="tel:+5215599093539">+52 1 55 9909 3539</a>
+                </div>
+                <div class="footer__contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <a href="mailto:daniela.montoya@siigo.com">daniela.montoya@siigo.com</a>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container footer-bottom-inner">
-                <p>© 2026 Siigo Aspel · Todos los derechos reservados.</p>
-                <p class="footer-disclaimer">Las marcas Siigo y Aspel son propiedad registrada de sus respectivos titulares.</p>
-            </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2026 Siigo Aspel. Todos los derechos reservados. Hecho con orgullo en México.</p>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/525599093539?text=Hola,%20me%20interesa%20conocer%20las%20soluciones%20Siigo%20Aspel%20%F0%9F%9B%92"
-        class="floating-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5215599093539?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20Siigo%20Aspel"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.01 2.667A13.28 13.28 0 0 0 2.72 15.947a13.2 13.2 0 0 0 1.8 6.64L2.667 29.333l6.96-1.827a13.28 13.28 0 0 0 6.36 1.627h.006A13.29 13.29 0 0 0 16.01 2.667Zm0 24.32a11.02 11.02 0 0 1-5.62-1.54l-.4-.24-4.16 1.093 1.11-4.067-.267-.42a11.01 11.01 0 0 1-1.693-5.867A11.04 11.04 0 0 1 16.01 4.92a11.04 11.04 0 0 1 0 22.067Zm6.053-8.267c-.333-.167-1.967-.973-2.273-1.08-.307-.113-.527-.167-.747.167s-.86 1.08-1.053 1.3c-.193.22-.387.247-.72.08-.333-.167-1.407-.52-2.68-1.653-.99-.88-1.66-1.967-1.853-2.3-.193-.333-.02-.513.147-.68.147-.147.333-.387.5-.58.167-.193.22-.333.333-.553.113-.22.06-.413-.027-.58-.087-.167-.747-1.8-1.027-2.467-.267-.647-.54-.56-.747-.567h-.64a1.22 1.22 0 0 0-.887.413c-.307.333-1.16 1.133-1.16 2.767s1.187 3.213 1.353 3.433c.167.22 2.34 3.567 5.667 5 .793.34 1.413.547 1.893.7.793.253 1.52.22 2.093.133.64-.1 1.967-.807 2.247-1.58.273-.78.273-1.447.193-1.587-.08-.14-.3-.22-.633-.387Z" fill="#fff"/>
         </svg>
-        <span class="wa-pulse"></span>
     </a>
 
-    <script src="./main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
